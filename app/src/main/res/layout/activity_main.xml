@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="@string/person1"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/person_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_24"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:text="@string/zero"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/text_56" />
+
+            <ImageButton
+                android:id="@+id/bottle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:layout_marginLeft="@dimen/_24"
+                android:layout_marginRight="@dimen/_24"
+                android:onClick="addOneToPerson1"
+
+                android:src="@drawable/bottle" />
+
+            <ImageButton
+                android:id="@+id/mug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:layout_marginLeft="@dimen/_24"
+                android:layout_marginRight="@dimen/_24"
+                android:onClick="addTwoToPerson1"
+                android:src="@drawable/mug"
+
+                />
+
+            <ImageButton
+                android:id="@+id/keg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:layout_marginLeft="@dimen/_24"
+                android:layout_marginRight="@dimen/_24"
+                android:onClick="addFiveToPerson1"
+                android:src="@drawable/keg"
+                android:text="@string/free_throw" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_16"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="@string/person2"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/person_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_24"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:text="@string/zero"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/text_56" />
+
+            <ImageButton
+                android:id="@+id/bottle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:layout_marginLeft="@dimen/_24"
+                android:layout_marginRight="@dimen/_24"
+                android:onClick="addOneToPerson2"
+
+                android:src="@drawable/bottle" />
+
+            <ImageButton
+                android:id="@+id/mug2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:layout_marginLeft="@dimen/_24"
+                android:layout_marginRight="@dimen/_24"
+                android:onClick="addTwoToPerson2"
+                android:src="@drawable/mug"
+
+                />
+
+            <ImageButton
+                android:id="@+id/keg2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:layout_marginLeft="@dimen/_24"
+                android:layout_marginRight="@dimen/_24"
+                android:onClick="addFiveToPerson2"
+                android:src="@drawable/keg"
+                android:text="@string/free_throw" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:onClick="resetButton"
+        android:src="@drawable/drunk" />
+
+
+</RelativeLayout>
